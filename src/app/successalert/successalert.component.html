@@ -1,0 +1,23 @@
+
+
+<label>Enter Value to be Retrieved</label>
+<input
+ type="text" 
+ class="form-control"
+ (input) = "onInputText($event)"
+ [(ngModel)] ="valueInputed"
+ >
+<p>Click the button to demonstrate line-breaks in an alert box.</p>
+
+<button
+ [disabled]="!allowNewPopup"
+ (click) = "onClickingButton()"
+ 
+ >Try it</button>
+ <p *ngIf ="isButtonClicked">Value of text is {{valueInputed}} {{isButtonClicked}}</p>
+ <h5>Status of Click is {{status}}</h5>
+<p>Value is  {{allowNewPopup}} </p>
+
+
+
+
